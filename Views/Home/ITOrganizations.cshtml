@@ -1,0 +1,13 @@
+﻿@model List<string>
+
+@foreach (var d in Model)
+{
+    if (d.ToUpper().Equals("AMAZON"))
+    {
+        <b>@d</b>
+    }
+    else 
+    { 
+        <p>@d</p>
+    }  
+}

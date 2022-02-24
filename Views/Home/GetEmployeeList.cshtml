@@ -1,0 +1,35 @@
+﻿@model List<Employee>
+
+@foreach (var d in Model)
+{
+
+
+
+
+    <figure class="col-lg-8 p-1 mb-2" style="border-right: 2px solid #c71585; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
+        <blockquote class="blockquote p-1">
+            <div class="row p-1 align-items-center">
+                @if (d.IsPermanent)
+                {
+                    <div class="col-md-4">
+                        <span><b>Employee : @d.Name</b></span>
+                    </div>
+                    <div class="col-md-4">
+                        <span><b>Salary : Rs @d.Salary</b></span>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-4">
+                        <span><p>Employee : @d.Name</p></span>
+                    </div>
+                    <div class="col-md-4">
+                        <span><p>Salary : Rs @d.Salary</p></span>
+                    </div>
+                }
+            </div>
+        </blockquote>
+    </figure>
+}
+
+@Html.Partial("EmployeeList", Model)
