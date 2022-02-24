@@ -29,7 +29,7 @@ namespace HandsOn2.Controllers
             };
             return View(list);
         }
-
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
         public IActionResult ITOrganizations()
         {
             List<string> list = new List<string>() { "Microsoft www.microsoft.com",
